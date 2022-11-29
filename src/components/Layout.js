@@ -60,6 +60,9 @@ class MainLayout extends React.Component {
             ))}
           </Menu>
         </Sider>
+        <Layout className="site-layout">
+            
+        </Layout>
       </Layout>
     );
   }
