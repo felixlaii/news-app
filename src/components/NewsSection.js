@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "antd/dist/antd.css";
 import { Row, Col, Divider, Card } from "antd";
 import { fetchNews } from "../api/newsAPI";
-import parse from "react-html-parser";
+import parse from "html-react-parser";
 const { Meta } = Card;
 
 const NewsSection = (request) => {
