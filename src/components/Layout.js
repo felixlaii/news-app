@@ -4,3 +4,5 @@ import { fetchSources } from '../api/newsAPI';
 
 const NewsSection = React.lazy(() => import('./NewsSection'));
 const News = React.lazy(() => import('./News'));
+
+const { Header, Sider, Content } = Layout;
