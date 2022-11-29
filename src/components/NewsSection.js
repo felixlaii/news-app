@@ -20,6 +20,11 @@ const NewsSection = (request) => {
                 <h1 style={{ fontSize: '30px' }}>{request.topHeading}</h1>
                 </Col>
             </Row>
+            <Row>
+                {newsSection.length > 1 ?
+                    newsSection.map((article, key) => article.urlToImage === "" || article.urlToImage === null ? null :)    
+            }
+            </Row>
         </div>
     )
 }
