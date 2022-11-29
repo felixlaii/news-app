@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import "antd/dist/antd.css";
 import { fetchSources } from "../api/newsAPI";
+import Menu from "rc-menu";
 
 const NewsSection = React.lazy(() => import("./NewsSection"));
 const News = React.lazy(() => import("./News"));
@@ -41,6 +42,11 @@ class MainLayout extends React.Component {
           <div className="logo">
             <h2>{!this.state.collapsed ? "N" : "Newsio"}</h2>
           </div>
+          <Menu theme="dark" mode='inline' defaultSelectedKeys={['-1']}>
+              <Menu.Item>
+                  
+              </Menu.Item>
+          </Menu>
         </Sider>
       </Layout>
     );
