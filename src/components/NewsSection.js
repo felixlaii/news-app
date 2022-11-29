@@ -42,6 +42,13 @@ const NewsSection = (request) => {
                     : "loading.."
             }
             </Row>
+            {request.linkText != null?
+            <Row>
+                <Col>
+                <Divider/>
+                </Col>
+            </Row> : null
+        }
         </div>
     )
 }
