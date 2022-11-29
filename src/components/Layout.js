@@ -70,17 +70,29 @@ class MainLayout extends React.Component {
               }
             )}
           </Header>
-          <Content className="site-layout-background"
-          style={{
-              margin: '24px 16px',
+          <Content
+            className="site-layout-background"
+            style={{
+              margin: "24px 16px",
               padding: 24,
               paddingRight: 0,
               minHeight: 280,
-          }}
+            }}
           >
-              <Suspense fallback={<h1 style={{ fontSize: '30px' }}>Loading...</h1>}>
-                  
-              </Suspense>
+            <Suspense
+              fallback={<h1 style={{ fontSize: "30px" }}>Loading...</h1>}
+            >
+              {this.state.homePage === true ? (
+                <News />
+              ) : (
+                <NewsSection
+                  category="everything"
+                  query={"q=" + this.state.query}
+                  topHeading={this.state.query}
+                  results="100"
+                />
+              )}
+            </Suspense>
           </Content>
         </Layout>
       </Layout>
