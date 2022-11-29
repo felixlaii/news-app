@@ -11,7 +11,16 @@ const NewsSection = (request) => {
             setNewsSection(await fetchNews(request));
         };
         fetchAPI();
-    }, [request])
+    }, [request]);
+
+    return (
+        <div>
+            <Row>
+                <Col>
+                </Col>
+            </Row>
+        </div>
+    )
 }
 
 export default NewsSection;
