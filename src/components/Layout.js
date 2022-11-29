@@ -33,4 +33,10 @@ class MainLayout extends React.Component {
           query: query
         });
       }
+
+      render() {
+          return (
+              
+          )
+      }
 }
