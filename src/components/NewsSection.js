@@ -39,6 +39,7 @@ const NewsSection = (request) => {
                         </Card>
                     </Col>
                     )    
+                    : "loading.."
             }
             </Row>
         </div>
