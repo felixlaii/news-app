@@ -22,7 +22,10 @@ const NewsSection = (request) => {
             </Row>
             <Row>
                 {newsSection.length > 1 ?
-                    newsSection.map((article, key) => article.urlToImage === "" || article.urlToImage === null ? null :)    
+                    newsSection.map((article, key) => article.urlToImage === "" || article.urlToImage === null ? null :
+                    <Col>
+                    </Col>
+                    )    
             }
             </Row>
         </div>
