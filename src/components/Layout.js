@@ -8,5 +8,10 @@ const News = React.lazy(() => import('./News'));
 const { Header, Sider, Content } = Layout;
 
 class MainLayout extends React.Component {
-
+    state = {
+        collapsed: false,
+        sources: [],
+        homePage: true,
+        query: '',
+    };
 }
