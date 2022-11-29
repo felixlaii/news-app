@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "antd/dist/antd.css";
 import { Row, Col, Divider, Card } from "antd";
 import { fetchNews } from "../api/newsAPI";
-import ReactHtmlParser from "react-html-parser";
+import parse from "react-html-parser";
 const { Meta } = Card;
 
 const NewsSection = (request) => {
@@ -41,16 +41,16 @@ const NewsSection = (request) => {
                     title={
                       article.source.name === "" || article.source.name === null
                         ? null
-                        : "Source " + ReactHtmlParser(article.source.name)
+                        : "Source " + parse(article.source.name)
                     }
                     extra={
                       article.author === "" || article.author === null
                         ? null
-                        : "Author: " + ReactHtmlParser(article.author)
+                        : "Author: " + parse(article.author)
                     }
                   >
-                    <h3>{ReactHtmlParser(article.title)}</h3>
-                    <Meta description={ReactHtmlParser(article.description)} />
+                    <h3>{parse(article.title)}</h3>
+                    <Meta description={parse(article.description)} />
                   </Card>
                 </Col>
               )
