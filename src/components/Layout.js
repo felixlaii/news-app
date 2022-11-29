@@ -43,8 +43,8 @@ class MainLayout extends React.Component {
             <h2>{!this.state.collapsed ? "N" : "Newsio"}</h2>
           </div>
           <Menu theme="dark" mode='inline' defaultSelectedKeys={['-1']}>
-              <Menu.Item>
-                  
+              <Menu.Item nClick={() => this.setState({ homePage: true })} key="-1" icon={<StockOutlined />}>
+              Top News
               </Menu.Item>
           </Menu>
         </Sider>
