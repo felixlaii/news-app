@@ -14,4 +14,10 @@ class MainLayout extends React.Component {
         homePage: true,
         query: '',
     };
+
+    toggle = () => {
+        this.setState({
+          collapsed: !this.state.collapsed,
+        });
+      };
 }
