@@ -70,8 +70,15 @@ class MainLayout extends React.Component {
               }
             )}
           </Header>
-          <Content>
-              
+          <Content className="site-layout-background"
+          style={{
+              margin: '24px 16px',
+              padding: 24,
+              paddingRight: 0,
+              minHeight: 280,
+          }}
+          >
+
           </Content>
         </Layout>
       </Layout>
