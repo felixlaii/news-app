@@ -1,7 +1,12 @@
 import React, { Suspense } from "react";
 import "antd/dist/antd.css";
+import { Layout, Menu } from "antd";
+import {
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
+  StockOutlined,
+} from "@ant-design/icons";
 import { fetchSources } from "../api/newsAPI";
-import Menu from "rc-menu";
 
 const NewsSection = React.lazy(() => import("./NewsSection"));
 const News = React.lazy(() => import("./News"));
