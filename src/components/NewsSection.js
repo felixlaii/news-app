@@ -17,6 +17,7 @@ const NewsSection = (request) => {
         <div>
             <Row>
                 <Col>
+                <h1 style={{ fontSize: '30px' }}>{request.topHeading}</h1>
                 </Col>
             </Row>
         </div>
