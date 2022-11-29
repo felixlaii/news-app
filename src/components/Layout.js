@@ -26,4 +26,11 @@ class MainLayout extends React.Component {
     
         this.setState({ sources });
       }
+
+      loadNews(query) {
+        this.setState({
+          homePage: false,
+          query: query
+        });
+      }
 }
