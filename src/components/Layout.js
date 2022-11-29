@@ -78,7 +78,9 @@ class MainLayout extends React.Component {
               minHeight: 280,
           }}
           >
-
+              <Suspense fallback={<h1 style={{ fontSize: '30px' }}>Loading...</h1>}>
+                  
+              </Suspense>
           </Content>
         </Layout>
       </Layout>
