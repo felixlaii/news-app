@@ -70,6 +70,9 @@ class MainLayout extends React.Component {
               }
             )}
           </Header>
+          <Content>
+              
+          </Content>
         </Layout>
       </Layout>
     );
