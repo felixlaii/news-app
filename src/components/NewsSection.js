@@ -23,7 +23,10 @@ const NewsSection = (request) => {
             <Row>
                 {newsSection.length > 1 ?
                     newsSection.map((article, key) => article.urlToImage === "" || article.urlToImage === null ? null :
-                    <Col>
+                    <Col key={key} md={{ span: 8 }} sm={{ span: 24 }}>
+                        <Card>
+                            
+                        </Card>
                     </Col>
                     )    
             }
