@@ -33,7 +33,9 @@ const NewsSection = (request) => {
                     title={article.source.name === "" || article.source.name === null ? null : "Source " + ReactHtmlParser(article.source.name)}
                     extra={article.author === "" || article.author === null ? null : "Author: " + ReactHtmlParser(article.author)}
                     >
-
+                        <h3>{ReactHtmlParser(article.title)}</h3>
+                        <Meta 
+                        description={ReactHtmlParser(article.description)} />
                         </Card>
                     </Col>
                     )    
