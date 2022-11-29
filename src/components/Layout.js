@@ -7,6 +7,7 @@ import {
   StockOutlined,
 } from "@ant-design/icons";
 import { fetchSources } from "../api/newsAPI";
+import "./layout.css";
 
 const NewsSection = React.lazy(() => import("./NewsSection"));
 const News = React.lazy(() => import("./News"));
