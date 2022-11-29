@@ -42,10 +42,22 @@ class MainLayout extends React.Component {
           <div className="logo">
             <h2>{!this.state.collapsed ? "N" : "Newsio"}</h2>
           </div>
-          <Menu theme="dark" mode='inline' defaultSelectedKeys={['-1']}>
-              <Menu.Item nClick={() => this.setState({ homePage: true })} key="-1" icon={<StockOutlined />}>
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={["-1"]}>
+            <Menu.Item
+              nClick={() => this.setState({ homePage: true })}
+              key="-1"
+              icon={<StockOutlined />}
+            >
               Top News
+            </Menu.Item>
+            {this.state.sources.map((source) => (
+              <Menu.Item
+                onClick={() => this.loadNews(source.name)}
+                key={source.name}
+              >
+                {source.name}
               </Menu.Item>
+            ))}
           </Menu>
         </Sider>
       </Layout>
