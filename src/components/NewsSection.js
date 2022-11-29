@@ -6,6 +6,11 @@ import ReactHtmlParser from 'react-html-parser';
 
 const NewsSection = (request) => {
     const [newsSection, setNewsSection] = useState([]);
+    useEffect(( => {
+        const fetchAPI = async () => {
+            setNewsSection(await fetchNews(request));
+        }
+    })
 }
 
 export default NewsSection;
