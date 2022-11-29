@@ -6,3 +6,7 @@ const NewsSection = React.lazy(() => import('./NewsSection'));
 const News = React.lazy(() => import('./News'));
 
 const { Header, Sider, Content } = Layout;
+
+class MainLayout extends React.Component {
+
+}
