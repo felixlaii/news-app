@@ -5,3 +5,7 @@
     cursor: pointer;
     transition: color 0.3s;
 }
+
+.trigger:hover {
+    color: #1890FF;
+}
