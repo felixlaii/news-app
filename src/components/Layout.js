@@ -20,4 +20,10 @@ class MainLayout extends React.Component {
           collapsed: !this.state.collapsed,
         });
       };
+
+      async componentDidMount() {
+        const sources = await fetchSources();
+    
+        this.setState({ sources });
+      }
 }
